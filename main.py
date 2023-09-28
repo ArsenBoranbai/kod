@@ -16,16 +16,16 @@
 # slova = stroka.split()
 # for i, word in enumerate(slova, 1):
 #     print(f"{i}. {word[:10]}")
-#5 def funkciya(a, value):
-#     if value > max(a) or value not in a:
-#         a.insert(0, value)
-#     else:
-#         a.insert(a.index(value), value)
-# my_list = [7, 5, 3, 3, 2]
-# print(my_list)
-# funkciya(my_list, 3)
-# print(my_list)
-# funkciya(my_list, 8)
-# print(my_list)
-# funkciya(my_list, 1)
-# print(my_list)
+#5 def update_rating(rating, new_element):
+#     index = 0
+#     for i, num in enumerate(rating):
+#         if new_element <= num:
+#             index = i + 1
+#         else:
+#             break
+#     rating.insert(index, new_element)
+# my_rating = [7, 5, 3, 3, 2]
+# print("Старый рейтинг:", my_rating)
+# new_value = int(input("Введите элемент: "))
+# update_rating(my_rating, new_value)
+# print("Рейтинг:", my_rating)
